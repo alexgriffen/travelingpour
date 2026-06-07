@@ -11,8 +11,8 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1600&q=80"
-          alt="Mobile bar trailer at an outdoor event"
+          src="https://images.unsplash.com/photo-1593887937265-2a09787dcc19?w=1600&q=80"
+          alt="Beer taps at a premium bar"
           fill
           className="object-cover object-center"
           priority
