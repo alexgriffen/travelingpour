@@ -6,18 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, Share2, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/content";
+import { sendInquiry, type InquiryData } from "./actions";
 
-type FormValues = {
-  name: string;
-  email: string;
-  phone: string;
-  eventType: string;
-  eventDate: string;
-  location: string;
-  guestCount: string;
-  referral: string;
-  message: string;
-};
+type FormValues = InquiryData;
 
 const eventTypes = [
   "Birthday",
@@ -30,15 +21,21 @@ const eventTypes = [
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>();
 
-  const onSubmit = async (_data: FormValues) => {
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
+  const onSubmit = async (data: FormValues) => {
+    setSubmitError(null);
+    const result = await sendInquiry(data);
+    if (result.success) {
+      setSubmitted(true);
+    } else {
+      setSubmitError(result.error ?? "Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -279,6 +276,18 @@ export default function ContactPage() {
                         placeholder="Tell us more about your event — venue type, vision, any questions..."
                       />
                     </div>
+
+                    {submitError && (
+                      <p className="text-red-400 text-sm text-center">
+                        {submitError}{" "}
+                        <a
+                          href={`mailto:${siteConfig.email}`}
+                          className="underline hover:text-red-300"
+                        >
+                          {siteConfig.email}
+                        </a>
+                      </p>
+                    )}
 
                     <button
                       type="submit"

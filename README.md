@@ -45,16 +45,21 @@ All copy, testimonials, amenities, packages, and FAQ answers live in `lib/conten
 
 ## Environment Variables
 
-No environment variables are required for v1. The contact form is frontend-only (shows a success message on submit but doesn't send data anywhere).
-
-If you later wire the form to an email service, create `.env.local` and add:
+The contact form delivers booking inquiries by email via [Resend](https://resend.com) and a Next.js Server Action (`app/contact/actions.ts`). Copy `.env.example` to `.env.local` and fill in:
 
 ```
-# Formspree
-NEXT_PUBLIC_FORMSPREE_ID=your_id_here
-
-# or EmailJS
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=...
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=...
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=...
+RESEND_API_KEY=re_...
+INQUIRY_TO_EMAIL=hello@travelingpour.com
+INQUIRY_FROM_EMAIL=Traveling Pour Bar <inquiries@travelingpour.com>
 ```
+
+### Setting up Resend
+
+1. Create a free account at [resend.com](https://resend.com) and grab an **API key**.
+2. **Verify your domain:** Resend dashboard → Domains → Add `travelingpour.com`. Resend gives you a set of DNS records (SPF, DKIM, and a return-path). Add them at your domain registrar's DNS settings, then click Verify.
+3. Set `INQUIRY_FROM_EMAIL` to an address on the verified domain (e.g. `inquiries@travelingpour.com`).
+4. Add all three variables in **Vercel → Project → Settings → Environment Variables**, then redeploy.
+
+**Before the domain is verified** you can test immediately by setting `INQUIRY_FROM_EMAIL="Traveling Pour Bar <onboarding@resend.dev>"` — note Resend's test sender can only deliver to the email address that owns the Resend account.
+
+The recipient inbox (`INQUIRY_TO_EMAIL`) can be any address you check — it doesn't need to be on the verified domain.
