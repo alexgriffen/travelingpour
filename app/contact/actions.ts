@@ -13,6 +13,9 @@ export type InquiryData = {
   guestCount: string;
   referral: string;
   message: string;
+  // Honeypot — a hidden field real users never fill. If it's populated,
+  // the submission is almost certainly a bot.
+  website?: string;
 };
 
 export type InquiryResult = { success: boolean; error?: string };
@@ -27,6 +30,13 @@ function escapeHtml(value: string): string {
 }
 
 export async function sendInquiry(data: InquiryData): Promise<InquiryResult> {
+  // Honeypot: real users never see or fill the `website` field, so anything
+  // here is a bot. Pretend success and send nothing — don't tip off the bot,
+  // don't email anyone.
+  if (data.website && data.website.trim() !== "") {
+    return { success: true };
+  }
+
   // Basic server-side validation — Server Actions are reachable via direct POST,
   // so never trust the client to have validated.
   const name = data.name?.trim();

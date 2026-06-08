@@ -145,6 +145,22 @@ export default function ContactPage() {
                     onSubmit={handleSubmit(onSubmit)}
                     className="space-y-5"
                   >
+                    {/* Honeypot — hidden from real users, off-screen and out of
+                        the tab order. Bots that fill every field will trip it. */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden"
+                    >
+                      <label htmlFor="website">Website</label>
+                      <input
+                        id="website"
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        {...register("website")}
+                      />
+                    </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-xs font-semibold tracking-wide uppercase text-[#9AA8B2] mb-1.5">
