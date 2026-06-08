@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Traveling Pour Bar",
   tagline: "Your Bar. Your Event. Delivered.",
   subTagline:
-    "Premium mobile bar trailer rental for weddings, birthdays, watch parties, and private events across the San Francisco Bay Area — with high-speed WiFi and TVs built right in.",
+    "Premium mobile bar trailer rental for weddings, birthdays, corporate events, watch parties, and private parties across the San Francisco Bay Area — with high-speed WiFi and TVs built right in.",
   domain: "travelingpour.com",
   email: "hello@travelingpour.com",
   phone: "(925) 264-9595",
@@ -14,7 +14,7 @@ export const siteConfig = {
   seo: {
     title: "Traveling Pour Bar | Mobile Bar Trailer Rental — Bay Area, CA",
     description:
-      "Traveling Pour Bar brings a fully-equipped mobile bar trailer to your event in the San Francisco Bay Area. Dry hire mobile bar rental for weddings, birthdays, corporate events, and private parties in Alameda and Santa Clara County.",
+      "Traveling Pour Bar brings a fully-equipped mobile bar trailer to your event in the San Francisco Bay Area. Dry hire mobile bar rental for weddings, birthdays, corporate events, watch parties, and private parties in Alameda and Santa Clara County.",
   },
 };
 
