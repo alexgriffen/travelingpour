@@ -143,6 +143,8 @@ export const packages = [
       "Draft beer tap system",
       "Glassware & bar tools",
       "Climate controlled interior",
+      "Comfortable pub-style seating",
+      "Full bar decor & lighting",
       "High-speed WiFi & TVs",
       "Optional bartender add-on",
     ],
@@ -156,9 +158,6 @@ export const packages = [
       "Everything in The Tap Room",
       "Multi-day rental",
       "Morning cleanup & reset each day",
-      "Full bar decor & lighting",
-      "Comfortable pub-style seating",
-      "Optional bartender add-on",
     ],
     highlight: true,
   },
@@ -183,7 +182,7 @@ export const faqs = [
   {
     question: "Do you provide a bartender?",
     answer:
-      "Optional. We can staff the bar with a professional bartender or leave it to you and your guests. Bartender staffing is available as an add-on or included in The VIP Barrel package.",
+      "Optional. We can staff the bar with a professional bartender or leave it to you and your guests. Bartender staffing is available as an add-on with either package.",
   },
   {
     question: "How much space do I need?",
