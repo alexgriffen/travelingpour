@@ -64,14 +64,11 @@ export default function PackagesPage() {
                 </ul>
 
                 <div className="pt-4 border-t border-[#0F1923]">
-                  <p className="text-[#F5F0E8] font-serif text-xl font-bold mb-4">
-                    {pkg.price}
-                  </p>
                   <Link
                     href="/contact"
                     className="block text-center py-3 rounded text-sm font-semibold tracking-wide transition-colors bg-[#C9A84C] text-[#0F1923] hover:bg-[#d4b56a]"
                   >
-                    Book This Package
+                    Request a Quote
                   </Link>
                 </div>
               </div>

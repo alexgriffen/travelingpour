@@ -146,7 +146,6 @@ export const packages = [
       "High-speed WiFi & TVs",
       "Optional bartender add-on",
     ],
-    price: "Starting at $TBD",
     highlight: false,
   },
   {
@@ -161,7 +160,6 @@ export const packages = [
       "Comfortable pub-style seating",
       "Optional bartender add-on",
     ],
-    price: "Starting at $TBD",
     highlight: true,
   },
 ];
