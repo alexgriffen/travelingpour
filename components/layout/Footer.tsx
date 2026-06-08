@@ -58,10 +58,13 @@ export default function Footer() {
                 <Mail size={15} />
                 {siteConfig.email}
               </a>
-              <span className="flex items-center gap-2 text-[#9AA8B2] text-sm">
+              <a
+                href={siteConfig.phoneHref}
+                className="flex items-center gap-2 text-[#9AA8B2] hover:text-[#F5F0E8] transition-colors text-sm"
+              >
                 <Phone size={15} />
                 {siteConfig.phone}
-              </span>
+              </a>
               <span className="flex items-center gap-2 text-[#9AA8B2] text-sm">
                 <MapPin size={15} />
                 {siteConfig.location}

@@ -75,10 +75,13 @@ export default function ContactPage() {
                     <Mail size={16} className="text-[#C9A84C]" />
                     {siteConfig.email}
                   </a>
-                  <span className="flex items-center gap-3 text-[#9AA8B2] text-sm">
+                  <a
+                    href={siteConfig.phoneHref}
+                    className="flex items-center gap-3 text-[#9AA8B2] hover:text-[#F5F0E8] transition-colors text-sm"
+                  >
                     <Phone size={16} className="text-[#C9A84C]" />
                     {siteConfig.phone}
-                  </span>
+                  </a>
                   <a
                     href={siteConfig.instagram}
                     target="_blank"
