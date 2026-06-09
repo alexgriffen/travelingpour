@@ -29,7 +29,7 @@ export const navLinks = [
 
 export const trustSignals = [
   { text: "Alameda & Santa Clara County", icon: "map-pin" },
-  { text: "Dry Hire — You Supply the Spirits", icon: "shield-check" },
+  { text: "Dry Hire — You Supply the Alcohol", icon: "shield-check" },
   { text: "Delivery & Setup Included", icon: "truck" },
   { text: "5-Star Rated Events", icon: "star" },
 ];
@@ -75,7 +75,7 @@ export const howItWorks = [
     step: "03",
     title: "You Pour, Party & Enjoy",
     description:
-      "Stock the bar with your favorite spirits and let the good times flow. When the party's over, we handle full teardown — you don't lift a finger.",
+      "Stock the bar with your favorite beers and kegs and let the good times flow. When the party's over, we handle full teardown — you don't lift a finger.",
   },
 ];
 

@@ -58,9 +58,9 @@ export default function OurStoryPage() {
             </p>
             <p>
               California law means we operate as a dry hire: you supply the
-              spirits, we supply everything else. That means we&apos;re fully legal, and
-              it means you get to stock your bar with the exact bottles and beers
-              your guests love. We&apos;re not a one-size-fits-all operation — every
+              alcohol, we supply everything else. That means we&apos;re fully legal, and
+              it means you get to stock your bar with the exact beers, kegs, and
+              bottles your guests love. We&apos;re not a one-size-fits-all operation — every
               rental is tailored to your event.
             </p>
             <p>

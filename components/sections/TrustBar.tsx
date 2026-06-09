@@ -7,7 +7,7 @@ const signals = [
   { icon: Star, text: "5-Star Rated Events" },
   { icon: MapPin, text: "Alameda & Santa Clara County" },
   { icon: PlugZap, text: "Self-Powered — Set Up Anywhere" },
-  { icon: ShieldCheck, text: "Dry Hire — You Supply the Spirits" },
+  { icon: ShieldCheck, text: "Dry Hire — You Supply the Alcohol" },
   { icon: Truck, text: "Delivery & Setup Included" },
 ];
 
