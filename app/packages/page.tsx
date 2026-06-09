@@ -1,7 +1,29 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import {
+  Check,
+  UserCheck,
+  Lightbulb,
+  Dices,
+  Armchair,
+  PartyPopper,
+  GlassWater,
+} from "lucide-react";
 import type { Metadata } from "next";
-import { packages, siteConfig } from "@/lib/content";
+import {
+  packages,
+  siteConfig,
+  addOns,
+  packageDisclaimers,
+} from "@/lib/content";
+
+const addOnIconMap: Record<string, React.ElementType> = {
+  UserCheck,
+  Lightbulb,
+  Dices,
+  Armchair,
+  PartyPopper,
+  GlassWater,
+};
 
 export const metadata: Metadata = {
   title: `Packages & Pricing | ${siteConfig.name}`,
@@ -82,6 +104,57 @@ export default function PackagesPage() {
               bar, equipment, delivery, setup, teardown, and optionally a
               bartender.
             </p>
+          </div>
+
+          {/* Optional Add-Ons */}
+          <div className="mt-20 max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#C9A84C] mb-3">
+                Make It Yours
+              </p>
+              <h2 className="font-serif text-3xl lg:text-4xl font-bold text-[#F5F0E8]">
+                Optional Add-Ons
+              </h2>
+              <p className="mt-4 text-[#9AA8B2] text-sm max-w-lg mx-auto">
+                Customize any package with extras. Add-ons are priced per event
+                — just ask for a quote.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {addOns.map((addon) => {
+                const Icon = addOnIconMap[addon.icon];
+                return (
+                  <div
+                    key={addon.title}
+                    className="bg-[#1C2B38] rounded-xl p-5 flex items-center gap-3"
+                  >
+                    {Icon && (
+                      <div className="w-9 h-9 rounded-lg bg-[#C9A84C]/10 flex items-center justify-center flex-shrink-0">
+                        <Icon size={18} className="text-[#C9A84C]" />
+                      </div>
+                    )}
+                    <span className="text-[#F5F0E8] text-sm font-medium leading-tight">
+                      {addon.title}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Disclaimers */}
+          <div className="mt-16 max-w-2xl mx-auto">
+            <ul className="space-y-2">
+              {packageDisclaimers.map((note, i) => (
+                <li
+                  key={i}
+                  className="text-[#9AA8B2]/80 text-xs leading-relaxed flex gap-2"
+                >
+                  <span className="text-[#C9A84C] flex-shrink-0">*</span>
+                  <span>{note}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

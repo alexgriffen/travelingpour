@@ -169,6 +169,21 @@ export const packages = [
   },
 ];
 
+export const addOns = [
+  { title: "Professional Bartender", icon: "UserCheck" },
+  { title: "External String Lighting", icon: "Lightbulb" },
+  { title: "Lawn Games", icon: "Dices" },
+  { title: "External Tables & Seating", icon: "Armchair" },
+  { title: "Custom Decorations", icon: "PartyPopper" },
+  { title: "Extra Glassware", icon: "GlassWater" },
+];
+
+export const packageDisclaimers = [
+  "Travel fees may apply for events outside Alameda & Santa Clara County.",
+  "Holiday and holiday-adjacent dates may be subject to a premium.",
+  "A deposit is required to reserve your date. Pricing is quoted per event and excludes applicable sales tax.",
+];
+
 export const faqs = [
   {
     question: "What is dry hire?",
