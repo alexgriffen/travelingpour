@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Truck, ShieldCheck, MapPin } from "lucide-react";
+import { Star, Truck, ShieldCheck, MapPin, PlugZap } from "lucide-react";
 
 const signals = [
   { icon: Star, text: "5-Star Rated Events" },
   { icon: MapPin, text: "Alameda & Santa Clara County" },
+  { icon: PlugZap, text: "Self-Powered — Set Up Anywhere" },
   { icon: ShieldCheck, text: "Dry Hire — You Supply the Spirits" },
   { icon: Truck, text: "Delivery & Setup Included" },
 ];

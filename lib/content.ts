@@ -211,6 +211,16 @@ export const faqs = [
       "Roughly a 25x12 ft flat, level area with adequate access for our tow vehicle. We'll confirm exact requirements when you contact us with your venue details.",
   },
   {
+    question: "Do you need access to power at my venue?",
+    answer:
+      "No. The trailer runs on a quiet onboard generator, so we're completely self-sufficient — you don't need to provide outlets, hookups, or any electricity. We won't trip your breakers or compete with the caterer and DJ for power.",
+  },
+  {
+    question: "What kinds of locations can you set up at?",
+    answer:
+      "Just about anywhere with room for the trailer and tow-vehicle access — backyards, driveways, parks, wineries, ranches, farms, and open fields. Because we bring our own power and climate control, we aren't limited to venues with hookups. Tell us your spot and we'll confirm it works.",
+  },
+  {
     question: "What's included in every rental?",
     answer:
       "Every rental includes delivery, setup, teardown, draft beer tap system, climate controlled interior, an onboard power generator, comfortable pub-style seating, high-speed WiFi, TVs, full bar decor, glassware, and bar tools. See our What's Included section for the full list.",
@@ -240,7 +250,7 @@ export const faqs = [
 export const pitchContent = {
   headline: "This Isn't a Folding Table and a Cooler. This Is a Bar.",
   paragraphs: [
-    "When you rent Traveling Pour Bar, you're not getting a cart with a cooler. You're getting a fully built-out bar trailer — draft taps, climate control, comfortable pub-style seating, premium decor, high-speed WiFi, and crisp TVs. It arrives at your venue ready to pour.",
+    "When you rent Traveling Pour Bar, you're not getting a cart with a cooler. You're getting a fully built-out bar trailer — draft taps, climate control, comfortable pub-style seating, premium decor, high-speed WiFi, and crisp TVs. It arrives at your venue ready to pour — and because it runs on its own onboard generator, your venue can be just about anywhere: a backyard, a park, a winery, even an open field.",
     "We built this for the Bay Area host who wants their event to feel like it was catered by a real establishment — not assembled from rental equipment. Watch the F1 race or the big game on the TVs while your guests drink from proper draft taps in a bar that looks like it belongs in Hayes Valley or Rockridge.",
     "All you need to do is stock it with your favorite bottles and show up. We handle everything else — delivery, setup, staffing if you want it, and full teardown when the night's over.",
   ],
