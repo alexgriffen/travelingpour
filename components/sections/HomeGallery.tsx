@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80",
-    alt: "Craft cocktails being prepared at a mobile bar",
+    src: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=600&q=80",
+    alt: "A fresh draft beer being poured at the mobile bar",
     className: "row-span-2",
   },
   {
@@ -26,8 +26,8 @@ const photos = [
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=600&q=80",
-    alt: "Cocktail detail shot with fresh garnish",
+    src: "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=600&q=80",
+    alt: "Close-up of a cold draft beer",
     className: "",
   },
   {

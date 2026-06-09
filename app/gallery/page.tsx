@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1200&q=85",
-    alt: "Craft cocktails being prepared at the mobile bar",
+    src: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=1200&q=85",
+    alt: "A fresh draft beer being poured at the mobile bar",
   },
   {
     src: "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=1200&q=85",
@@ -25,8 +25,8 @@ const photos = [
     alt: "Bar setup at an evening wedding reception",
   },
   {
-    src: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=1200&q=85",
-    alt: "Cocktail detail shot with fresh garnish",
+    src: "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=1200&q=85",
+    alt: "Close-up of a cold draft beer",
   },
   {
     src: "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=1200&q=85",
@@ -41,12 +41,12 @@ const photos = [
     alt: "Mobile bar at an outdoor evening party",
   },
   {
-    src: "https://images.unsplash.com/photo-1545241047-6083a3684587?w=1200&q=85",
-    alt: "Bartender preparing drinks at a private event",
+    src: "https://images.unsplash.com/photo-1555658636-6e4a36218be7?w=1200&q=85",
+    alt: "Bartender pulling a pint from the tap",
   },
   {
-    src: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=85",
-    alt: "Champagne pour at a wedding reception",
+    src: "https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=1200&q=85",
+    alt: "A row of draft beer taps",
   },
   {
     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",

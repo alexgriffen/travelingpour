@@ -6,8 +6,8 @@ import { Share2 } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 const placeholderPosts = [
-  "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80",
-  "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&q=80",
+  "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=400&q=80",
+  "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=400&q=80",
   "https://images.unsplash.com/photo-1574634534894-89d7576c8259?w=400&q=80",
   "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=400&q=80",
   "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
