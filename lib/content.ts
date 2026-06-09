@@ -96,6 +96,11 @@ export const amenities = [
     description: "AC and heat for comfortable year-round use.",
   },
   {
+    title: "Onboard Power Generator",
+    icon: "PlugZap",
+    description: "Built-in generator — we never depend on venue power.",
+  },
+  {
     title: "Comfortable Pub-style Seating",
     icon: "Users",
     description: "Guests can step inside for an authentic bar experience.",
@@ -143,6 +148,7 @@ export const packages = [
       "Draft beer tap system",
       "Glassware & bar tools",
       "Climate controlled interior",
+      "Onboard power generator",
       "Comfortable pub-style seating",
       "Full bar decor & lighting",
       "High-speed WiFi & TVs",
@@ -192,7 +198,7 @@ export const faqs = [
   {
     question: "What's included in every rental?",
     answer:
-      "Every rental includes delivery, setup, teardown, draft beer tap system, climate controlled interior, comfortable pub-style seating, high-speed WiFi, TVs, full bar decor, glassware, and bar tools. See our What's Included section for the full list.",
+      "Every rental includes delivery, setup, teardown, draft beer tap system, climate controlled interior, an onboard power generator, comfortable pub-style seating, high-speed WiFi, TVs, full bar decor, glassware, and bar tools. See our What's Included section for the full list.",
   },
   {
     question: "How far in advance should I book?",

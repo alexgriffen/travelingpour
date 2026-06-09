@@ -12,6 +12,7 @@ import {
   UserCheck,
   MapPin,
   Wifi,
+  PlugZap,
 } from "lucide-react";
 import { amenities } from "@/lib/content";
 
@@ -26,6 +27,7 @@ const iconMap: Record<string, React.ElementType> = {
   UserCheck,
   MapPin,
   Wifi,
+  PlugZap,
 };
 
 export default function WhatsIncluded() {
@@ -47,7 +49,7 @@ export default function WhatsIncluded() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {amenities.map((item, i) => {
             const Icon = iconMap[item.icon];
             return (
@@ -57,7 +59,7 @@ export default function WhatsIncluded() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="bg-[#0F1923] rounded-xl p-5 flex flex-col items-center text-center gap-3 hover:shadow-[0_0_20px_rgba(201,168,76,0.07)] transition-shadow duration-300"
+                className="grow-0 shrink-0 basis-[calc(50%_-_12px)] sm:basis-[calc(33.333%_-_16px)] lg:basis-[calc(20%_-_19.2px)] bg-[#0F1923] rounded-xl p-5 flex flex-col items-center text-center gap-3 hover:shadow-[0_0_20px_rgba(201,168,76,0.07)] transition-shadow duration-300"
               >
                 {Icon && (
                   <div className="w-10 h-10 rounded-lg bg-[#C9A84C]/10 flex items-center justify-center">
