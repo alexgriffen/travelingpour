@@ -34,6 +34,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# internal business docs — keep out of the public repo
+/docs/
+
 # vercel
 .vercel
 
