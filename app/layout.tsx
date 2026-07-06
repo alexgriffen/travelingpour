@@ -38,15 +38,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // In coming-soon mode the full-site chrome (nav + footer) links to gated
+  // pages, so hide it and let the coming-soon page stand on its own.
+  const comingSoon = process.env.COMING_SOON === "true";
+
   return (
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable}`}
     >
       <body className="bg-[#0F1923] text-[#F5F0E8] font-sans antialiased">
-        <Navbar />
+        {!comingSoon && <Navbar />}
         <main>{children}</main>
-        <Footer />
+        {!comingSoon && <Footer />}
       </body>
     </html>
   );
